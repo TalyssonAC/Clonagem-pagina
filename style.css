@@ -231,3 +231,49 @@ a:focus-visible {
 	margin-left: 5px;
 	color: #1a0dab;
 }
+
+.site-footer {
+	background: #f2f2f2;
+	color: #70757a;
+}
+
+.country-label {
+	margin: 0;
+	padding: 15px 30px;
+	border-bottom: 1px solid #dadce0;
+	font-size: 15px;
+}
+
+.footer-content {
+	min-height: 47px;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+	align-items: center;
+	gap: 20px;
+	padding: 0 30px;
+}
+
+.footer-content nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 26px;
+}
+
+.footer-content > nav:first-of-type {
+	justify-self: start;
+}
+
+.footer-content > nav:last-child {
+	justify-self: end;
+}
+
+.footer-content a {
+	font-size: 14px;
+}
+
+.personalization-note {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 12px;
+}
