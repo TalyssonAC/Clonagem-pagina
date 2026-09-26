@@ -97,3 +97,137 @@ a:hover {
 	text-decoration: none;
 	box-shadow: 0 1px 2px #0003;
 }
+
+.search-page {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: clamp(72px, 14vh, 132px) 24px 48px;
+}
+
+.search-area {
+	width: min(100%, 584px);
+	text-align: center;
+}
+
+.brand-name {
+	margin: 0 0 27px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: clamp(64px, 11vw, 92px);
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: -5px;
+}
+
+.brand-name span:nth-child(1),
+.brand-name span:nth-child(4),
+.brand-name span:nth-child(5) {
+	color: #4285f4;
+}
+
+.brand-name span:nth-child(2),
+.brand-name span:nth-child(7) {
+	color: #ea4335;
+}
+
+.brand-name span:nth-child(3) {
+	color: #fbbc05;
+}
+
+.brand-name span:nth-child(6) {
+	color: #34a853;
+}
+
+.search-form > label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.search-box {
+	width: 100%;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	padding: 0 15px;
+	border: 1px solid #dfe1e5;
+	border-radius: 24px;
+	transition: box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+	border-color: transparent;
+	box-shadow: 0 1px 6px #20212447;
+}
+
+.search-icon {
+	color: #9aa0a6;
+	font-size: 24px;
+	line-height: 1;
+	transform: rotate(-20deg);
+}
+
+.search-box input {
+	width: 100%;
+	min-width: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	color: #202124;
+	font: inherit;
+	font-size: 16px;
+}
+
+.search-box input::-webkit-search-cancel-button {
+	cursor: pointer;
+}
+
+.search-actions {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 29px;
+}
+
+.search-actions button {
+	min-height: 36px;
+	padding: 0 16px;
+	border: 1px solid #f8f9fa;
+	border-radius: 4px;
+	background: #f8f9fa;
+	color: #3c4043;
+	font: inherit;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.search-actions button:hover,
+.search-actions button:focus-visible {
+	border-color: #dadce0;
+	box-shadow: 0 1px 1px #0001;
+}
+
+.search-actions button:focus-visible,
+a:focus-visible {
+	outline: 2px solid #1a73e8;
+	outline-offset: 2px;
+}
+
+.language-message {
+	margin: 29px 0 0;
+	font-size: 13px;
+}
+
+.language-message a {
+	margin-left: 5px;
+	color: #1a0dab;
+}
