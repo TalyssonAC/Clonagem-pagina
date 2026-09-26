@@ -277,3 +277,67 @@ a:focus-visible {
 	text-align: center;
 	font-size: 12px;
 }
+
+@media (max-width: 640px) {
+	.site-header {
+		padding-inline: 16px;
+	}
+
+	.navigation-links-left {
+		display: none;
+	}
+
+	.main-navigation {
+		justify-content: flex-end;
+	}
+
+	.navigation-links-right {
+		gap: 16px;
+	}
+
+	.search-page {
+		padding: 90px 20px 44px;
+	}
+
+	.brand-name {
+		margin-bottom: 25px;
+		letter-spacing: -4px;
+	}
+
+	.footer-content {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		padding: 15px 22px;
+	}
+
+	.footer-content nav {
+		justify-content: center;
+		gap: 14px 22px;
+	}
+
+	.footer-content > nav {
+		width: 100%;
+		justify-content: center;
+		justify-self: center;
+	}
+
+	.personalization-note {
+		flex-basis: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 380px) {
+	.navigation-links-right {
+		gap: 12px;
+	}
+
+	.search-actions {
+		gap: 8px;
+	}
+
+	.search-actions button {
+		padding-inline: 10px;
+		font-size: 13px;
+	}
+}
