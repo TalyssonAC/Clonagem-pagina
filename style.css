@@ -33,7 +33,7 @@ a:hover {
 
 .site-header {
 	min-height: 60px;
-	padding: 6px 24px;
+	padding: 6px 16px;
 }
 
 .main-navigation,
@@ -43,7 +43,7 @@ a:hover {
 }
 
 .main-navigation {
-	justify-content: space-between;
+	justify-content: flex-end;
 	min-height: 48px;
 }
 
@@ -52,11 +52,12 @@ a:hover {
 }
 
 .navigation-links-left {
+	display: none;
 	gap: 18px;
 }
 
 .navigation-links-right {
-	gap: 22px;
+	gap: 16px;
 }
 
 .navigation-links a {
@@ -100,10 +101,11 @@ a:hover {
 
 .search-page {
 	flex: 1;
+	min-height: calc(100vh + 120px);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	padding: clamp(72px, 14vh, 132px) 24px 48px;
+	padding: 90px 20px 44px;
 }
 
 .search-area {
@@ -112,12 +114,12 @@ a:hover {
 }
 
 .brand-name {
-	margin: 0 0 27px;
+	margin: 0 0 25px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: clamp(64px, 11vw, 92px);
 	font-weight: 500;
 	line-height: 1;
-	letter-spacing: -5px;
+	letter-spacing: -4px;
 }
 
 .brand-name span:nth-child(1),
@@ -247,24 +249,23 @@ a:focus-visible {
 .footer-content {
 	min-height: 47px;
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-	align-items: center;
+	grid-template-columns: 1fr;
+	justify-items: center;
 	gap: 20px;
-	padding: 0 30px;
+	padding: 15px 22px;
 }
 
 .footer-content nav {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 26px;
+	justify-content: center;
+	gap: 14px 22px;
 }
 
-.footer-content > nav:first-of-type {
-	justify-self: start;
-}
-
-.footer-content > nav:last-child {
-	justify-self: end;
+.footer-content > nav {
+	width: 100%;
+	justify-content: center;
+	justify-self: center;
 }
 
 .footer-content a {
@@ -273,57 +274,64 @@ a:focus-visible {
 
 .personalization-note {
 	margin: 0;
-	padding: 0;
+	flex-basis: 100%;
 	text-align: center;
 	font-size: 12px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 641px) {
 	.site-header {
-		padding-inline: 16px;
+		padding-inline: 24px;
 	}
 
 	.navigation-links-left {
-		display: none;
+		display: flex;
 	}
 
 	.main-navigation {
-		justify-content: flex-end;
+		justify-content: space-between;
 	}
 
 	.navigation-links-right {
-		gap: 16px;
+		gap: 22px;
 	}
 
 	.search-page {
-		padding: 90px 20px 44px;
+		min-height: 0;
+		padding: clamp(72px, 14vh, 132px) 24px 48px;
 	}
 
 	.brand-name {
-		margin-bottom: 25px;
-		letter-spacing: -4px;
+		margin-bottom: 27px;
+		letter-spacing: -5px;
 	}
 
 	.footer-content {
-		grid-template-columns: 1fr;
-		justify-items: center;
-		padding: 15px 22px;
+		grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+		align-items: center;
+		padding: 0 30px;
 	}
 
 	.footer-content nav {
-		justify-content: center;
-		gap: 14px 22px;
+		gap: 26px;
 	}
 
 	.footer-content > nav {
-		width: 100%;
-		justify-content: center;
-		justify-self: center;
+		width: auto;
+	}
+
+	.footer-content > nav:first-of-type {
+		justify-self: start;
+		justify-content: flex-start;
+	}
+
+	.footer-content > nav:last-child {
+		justify-self: end;
+		justify-content: flex-end;
 	}
 
 	.personalization-note {
-		flex-basis: 100%;
-		text-align: center;
+		flex-basis: auto;
 	}
 }
 
