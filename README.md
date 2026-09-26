@@ -24,5 +24,5 @@ com abordagem mobile first.
 
 ## Status do projeto
 
-Em desenvolvimento.
+Finalizado!
 
