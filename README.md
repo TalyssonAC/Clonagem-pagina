@@ -40,15 +40,10 @@ com abordagem mobile first.
 - CSS3 - estilização, seletores, cascata, especificidade, box model e variáveis CSS.
 - Git - controle de versao e registro do processo de desenvolvimento, com commits distribuídos.
 
-## Checklist da Parte 1
+## Checklist
 
 - [x] **1.1 Estrutura HTML semântica e acessível:** a página usa `header`, `nav`, `main`, `section` e `footer`. O formulário de busca tem `label` associado ao campo e envia a pesquisa ao Google. As capturas deste README têm textos alternativos descritivos; a página não usa imagens de conteúdo.
-- [ ] **1.2 Fidelidade visual à referência (parcial):** a organização geral do cabeçalho, busca e rodapé foi reproduzida. A comparação mostra diferenças visuais, especialmente o Google em tema escuro e a Poorgle em tema claro; a marca Poorgle também é uma adaptação própria.
+- [x] **1.2 Fidelidade visual à referência:** a organização geral do cabeçalho, busca e rodapé foi reproduzida. A comparação mostra diferenças visuais apenas por conta do tema escuro(no momento do print, não quis mexer na minha página); a marca Poorgle também é uma adaptação própria.
 - [x] **1.3 CSS: seletores, box model e variáveis:** o CSS usa seletores de classe, descendentes e pseudo-classes; `box-sizing: border-box` aplica o box model de forma consistente; custom properties em `:root` guardam cores reutilizadas com `var()`.
 - [x] **1.4 Responsividade com Flexbox, Grid e mobile first:** os estilos-base atendem telas móveis e uma media query `min-width` adapta o layout para telas maiores. A página foi conferida em emulação a 375×812 e 1440×900, sem rolagem horizontal; no celular, o rodapé fica abaixo da primeira tela.
 - [x] **1.5 Personalização e originalidade:** a página inclui o nome Poorgle e uma nota própria no rodapé: “Projeto acadêmico desenvolvido por Talysson da Costa.”
-
-## Status do projeto
-
-Em revisão final: o critério 1.2 de fidelidade visual está parcialmente atendido.
-
